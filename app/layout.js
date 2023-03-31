@@ -1,13 +1,8 @@
-'use client'
 import React from 'react';
 import './globals.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 
-export const metadata = {
-  title: 'Amazon clone',
-  description: 'Next 13 with tailwind, firebase and stripe',
-}
 
 export default function RootLayout({ children}) {
 
