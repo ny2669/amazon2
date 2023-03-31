@@ -5,11 +5,13 @@ import Product from './Product'
 
 
 
+
+
 const ProductFeed = () => {
 
   const [products, setProducts] = useState([])
 
-  console.log(products)
+
 
   useEffect(() => {
 
@@ -24,6 +26,9 @@ const ProductFeed = () => {
     getProdcuts()
 
   },[])
+
+
+
 
   
 

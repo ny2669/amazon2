@@ -14,8 +14,6 @@ export default function Home() {
 <Heading/>
 
     <main className='max-w-[80%] mx-auto'>
- 
-      {/* <Banner/> */}
 
 <Banner/>
 <ProductFeed/>
