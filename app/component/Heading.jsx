@@ -35,7 +35,7 @@ const [userName, setUserName] = useState([])
     // The signed-in user info.
     const user = result.user.displayName;
     setUserName(user)
-    console.log(user)
+  
     // IdP data available using getAdditionalUserInfo(result)
     // ...
   }).catch((error) => {
@@ -66,7 +66,8 @@ const [userName, setUserName] = useState([])
       // ...
     } else {
       // User is signed out
-      // ...
+     
+      console.log(`${user} Signed Out`)
     }
   });
  },[user])
@@ -80,6 +81,7 @@ const signouts = () => {
     // Sign-out successful.
   }).catch((error) => {
     // An error happened.
+    console.log(error.message)
   });
 
 }
@@ -113,7 +115,7 @@ const signouts = () => {
 <div className='flex text-white  items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
 
     <div className='link' onClick={!user? logIn : signouts}>
-        <p> {user? `Hello, ${userName}`: 'sign out' } </p>
+        <p> {user? `Hello, ${userName}`: 'sign in' } </p>
         <p className='font-extrabold md:text-xs'>Account & lists</p>
     </div>
     <div className='link'>
